@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO_CHAT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Chat Header with Logo -->
+        <div class="chat-header">
+            <img src="logo.png" alt="AUTO_CHAT Logo" class="chat-logo">
+            <h1>AUTO_CHAT</h1>
+        </div>
+        <!-- Chat Messages Section -->
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages will appear here -->
+        </div>
+        <!-- Chat Input Section -->
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <input type="file" id="file-input" accept="image/*,video/*,audio/*">
+            <label for="file-input" class="upload-button">Upload</label>
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
