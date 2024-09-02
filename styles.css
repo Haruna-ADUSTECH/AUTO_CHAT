@@ -12,22 +12,22 @@ body {
 
 /* Chat container styling */
 .chat-container {
-    width: 95%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 400px; /* Reduce max-width to fit smaller screens */
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 95vh; /* Adjusted to fit better on smaller screens */
 }
 
 /* Chat header styling */
 .chat-header {
     background-color: #4CAF50;
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -37,15 +37,15 @@ body {
 }
 
 .chat-logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
+    width: 40px; /* Reduced logo size for better fit */
+    height: 40px;
+    margin-right: 10px;
     border-radius: 50%;
 }
 
 /* Animated title styling */
 .animated-title {
-    font-size: 2em;
+    font-size: 1.5em; /* Adjusted font size for smaller screens */
     font-weight: bold;
     color: #ffffff;
     animation: titleAnimation 2s infinite;
@@ -61,7 +61,7 @@ body {
 /* Chat messages styling */
 .chat-messages {
     flex: 1;
-    padding: 15px;
+    padding: 10px;
     overflow-y: auto;
     background-color: #e7f3ec;
 }
@@ -69,18 +69,18 @@ body {
 /* Chat input styling */
 .chat-input {
     display: flex;
-    padding: 10px;
+    padding: 8px;
     background-color: #f7f7f7;
     border-top: 1px solid #ddd;
+    gap: 5px; /* Adds space between input elements */
 }
 
 .chat-input input[type="text"] {
     flex: 1;
-    padding: 10px;
-    margin-right: 10px;
+    padding: 8px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .chat-input input[type="file"] {
@@ -90,11 +90,10 @@ body {
 .upload-button {
     background-color: #4CAF50;
     color: white;
-    padding: 10px;
+    padding: 8px;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 10px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     border: none;
 }
 
@@ -102,10 +101,10 @@ body {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .chat-input button:hover, .upload-button:hover {
@@ -113,9 +112,8 @@ body {
 }
 
 /* Responsive design for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     .chat-container {
-        height: 95vh;
         width: 100%;
         border-radius: 0;
     }
@@ -125,6 +123,7 @@ body {
     }
 
     .chat-input button, .upload-button {
-        padding: 8px 15px;
+        padding: 8px 10px;
+        font-size: 0.8em;
     }
 }
